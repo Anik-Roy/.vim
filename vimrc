@@ -2,7 +2,7 @@
 " simple .vimrc configuration
 "
 " Name -> Saikat Ray Tapu
-" GitHub -> saikat-tapu
+" GitHub -> srt-git
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
