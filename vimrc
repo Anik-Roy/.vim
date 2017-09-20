@@ -27,11 +27,16 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'altercation/vim-colors-solarized'
-Plug 'whatyouhide/vim-gotham'
-Plug 'trevordmiller/nova-vim'
+Plug 'ajmwagar/vim-deus'
+Plug 'dracula/vim'
+Plug 'toyamarinyon/vim-swift'
 
 " Initialize plugin system
 call plug#end()
+
+" CtrlP config
+let g:ctrlp_use_caching = 0
+let g:ctrlp_match_window_reversed = 0
 
 " set to auto read when a file is changed from the outside
 set autoread
@@ -60,6 +65,14 @@ set wildignore+=.git\*,.hg\*,.svn\*
 
 " highlight current line
 " set cursorline
+
+" lots of red columns. April Fool.
+"highlight ColorColumn ctermbg=red ctermfg=blue
+"exec 'set colorcolumn=' . join(range(2,80,3), ',')
+
+" notify when line has over 80 chars
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
 
 set showmatch                   " highlight matching
 set incsearch                   " search as chars are entered
@@ -118,10 +131,9 @@ set guifont=iosevka\ term\ Medium\ 13
 " colorscheme
 if has("gui_running")
     set t_Co=256
-    colorscheme nova
-    "colorscheme gotham
-    "set background=light
-    "colorschem solarized
+    set background=dark
+    colorschem deus
+    "color dracula
 endif
 
 " space between lines in pixel
