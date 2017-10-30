@@ -1,8 +1,9 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " simple .vimrc configuration
 "
-" Name -> Saikat Ray Tapu
-" GitHub -> srt-git
+" Name          -> Saikat Ray Tapu
+" Email         -> saikat.tapu@gmail.com
+" GitHub        -> saikat-rt
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
