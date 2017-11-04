@@ -28,9 +28,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'altercation/vim-colors-solarized'
-Plug 'ajmwagar/vim-deus'
-Plug 'dracula/vim'
-Plug 'toyamarinyon/vim-swift'
+Plug 'morhetz/gruvbox'
 
 " Initialize plugin system
 call plug#end()
@@ -133,8 +131,8 @@ set guifont=iosevka\ term\ Medium\ 13
 if has("gui_running")
     set t_Co=256
     set background=dark
-    colorschem deus
-    "color dracula
+    color gruvbox
+    let g:gruvbox_contrast_dark = 'soft'
 endif
 
 " space between lines in pixel
